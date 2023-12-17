@@ -16,12 +16,7 @@ def test_guest_can_add_product_to_basket(browser, link):
     link = f"{link}"
     page = ProductPage(browser, link)
     page.open()
-    page.remember_book_name()
-    page.remember_book_price()
-    page.click_on_basket_button()
-    page.solve_quiz_and_get_code()
-    page.fact_book_in_basket_name()
-    page.fact_price_in_basket()
+    page.add_product_to_basket()
     
     # pytest -v -s .\test_product_page.py
 
