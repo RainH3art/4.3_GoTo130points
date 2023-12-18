@@ -7,7 +7,8 @@ class ProductPage(BasePage):
         self.on_page_book_name()
         self.on_page_book_price()
         self.click_on_basket_button()
-        self.solve_quiz_and_get_code()
+        
+    def name_and_price_comparsion(self):
         self.fact_book_in_basket_name()
         self.fact_price_in_basket()
         self.should_be_name_the_same()
