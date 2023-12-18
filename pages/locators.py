@@ -1,9 +1,5 @@
 from selenium.webdriver.common.by import By
 
-
-class MainPageLocators():
-    LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
-    
 class LoginPageLocators():
     REGISTER_FORM = (By.CSS_SELECTOR, "#login_form")
     LOGIN_FORM = (By.CSS_SELECTOR, "#register_form")
@@ -19,5 +15,10 @@ class ProductPageLocators():
 class BasePageLocators():
     LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
     LOGIN_LINK_INVALID = (By.CSS_SELECTOR, "#login_link_inc")
+    OPEN_BASKET = (By.CSS_SELECTOR, ".basket-mini a.btn-default[href*='basket']")
+    
+class BasketPageLocators():
+    IN_BASKET_ITEM = (By.CSS_SELECTOR, ".basket-items .row")
+    EMPTY_BASKET_TEXT = (By.CSS_SELECTOR, "#content_inner > p")
     
    
